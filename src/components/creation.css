@@ -1,0 +1,159 @@
+.creation-container{
+   margin-top: 10rem;
+}
+
+.creation-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10rem;
+}
+
+.creation-header h2{
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.creation-header button{
+    padding: 0 2.5rem;
+    border-radius: 3px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 42px;
+    background: white;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.mobile-button{
+    display: none;
+}
+
+.creation-header button:hover{
+    background: black;
+    color: white;
+}
+
+.creation-card{
+    max-width: 1152px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creation-card .card{
+    position: relative;
+    margin: 1rem;
+}
+
+.creation-card .card span{
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 32px;
+    margin-top: 19.5rem;
+    padding: 2.5rem;
+}
+
+.creation-card .card:hover span{
+    color: black;
+}
+
+@media only screen and (max-width: 1129px) {
+    /* Pour les écrans plus petits que 1129px */
+    .card img {
+       display: none;
+    }
+    .card .mobile-image {
+       display: block;
+       filter: brightness(75%) contrast(105%);
+       cursor: pointer;
+       max-width: 100%;
+       margin-bottom: 1rem;
+       transition: all .5s ease-in-out;
+    }
+    .card .mobile-image:hover{
+        filter: brightness(75%) contrast(105%) opacity(0.5);
+    }
+    .creation-header button{
+       display: none;
+    }
+    .mobile-button{
+        display: block;
+        margin-top: 2rem;
+        background: white;
+        font-size: 26px;
+        letter-spacing: 8px;
+        font-weight:bold;
+        width: 320px;
+        padding: 1.5rem 0;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+    .mobile-button:hover{
+        background: black;
+        color: white
+    }
+    .creation-header{
+        margin: 0;
+    }
+    .creation-header h2{
+        margin: 0 auto;
+        font-size: 65px;
+    }
+    .creation-card{
+        margin: 0 auto;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .creation-card .card span{
+        font-size: 46px;
+        margin-top: 4rem;
+        margin-left: 1rem;
+        width: 350px;
+    }
+ }
+ @media only screen and (min-width: 1130px) {
+    /* Pour les écrans plus grands ou égaux à 1130px */
+    .card img {
+       display: block;
+       filter: brightness(75%) contrast(105%);
+       cursor: pointer;
+       transition: all .5s ease-in-out;
+    }
+    .card img:hover{
+        filter: brightness(75%) contrast(105%) opacity(0.5);
+    }
+    .card .mobile-image {
+       display: none;
+    }
+ }
+
+ @media only screen and (max-width: 620px){
+    .creation-card .card span{
+        font-size: 30px;
+        margin: 0;
+    }
+    .creation-header h2{
+        margin-top: -4rem;
+        font-size: 40px;
+    }
+    .mobile-button{
+        font-size: 20px;
+        width: 300px;
+        padding: 1rem 0;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+    .mobile-button:hover{
+        background: black;
+        color: white
+    }
+ }

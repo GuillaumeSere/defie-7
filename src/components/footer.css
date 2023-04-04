@@ -1,0 +1,121 @@
+.footer{
+    background: black;
+    margin-top: 10rem;
+    padding: 2.5rem;
+    height: auto;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.logo-footer{
+    width: 150px;
+    margin-right: 35rem;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+}
+
+.link img{
+    margin-left: 1rem;
+    cursor: pointer;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid transparent;
+}
+
+.link img:hover{
+    padding-bottom: .5rem;
+    border-bottom: 1px solid white;
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.list{
+    display: flex;
+    margin-right: 12rem;
+}
+
+.list li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    padding-bottom: .5rem;
+}
+
+.list li a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: .5rem;
+}
+
+.menu-footer span{
+    color: hsl(0, 0%, 55%);
+}
+
+@media only screen and (max-width: 940px){
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+    .social-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-footer{
+        width: 300px;
+        margin-right: 0;
+        position: absolute;
+        margin-bottom: 23rem;
+    }
+    .link{
+        position: absolute;
+        margin-top: 50rem;
+    }
+    .link img{
+        height: 60px;
+        margin: 1rem;
+    }
+    .menu-footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -5rem;
+    }
+    .list{
+        display: flex;
+        margin-right: 0;
+        flex-direction: column;
+    }
+    .list li{
+        margin-bottom: 3rem;
+    }
+    .list li a{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .menu-footer span{
+        position: absolute;
+        margin-top: 45rem;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
